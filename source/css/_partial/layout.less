@@ -160,13 +160,12 @@
 }
 
 .footer {
-    color: rgba(255,255,255,.6);
-    background: @darkPrimaryColor;
+    color: @textPrimaryColor;
+    background: @primaryTextColor;
     p {
         margin: 0;
         line-height: 1.6;
         font-size: 13px;
-        text-align: center;
         span {
             &:not(:first-child):before {
                 content: "·";
@@ -182,8 +181,7 @@
     }
 
     .top {
-        padding: 16px;
-        background: @primaryColor;
+        padding: 32px 32px 4px 32px;
     }
     a {
         color: inherit;
@@ -195,7 +193,7 @@
         }
     }
     .bottom {
-        padding: 16px;
+        padding: 4px 32px 32px 32px;
     }
 }
 
