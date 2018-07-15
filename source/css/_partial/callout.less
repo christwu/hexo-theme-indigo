@@ -1,0 +1,184 @@
+.callout {
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12), 0 3px 1px -2px rgba(0,0,0,.2);
+    position: relative;
+    margin: 1.5625em 0;
+    padding: 0 1.2rem;
+    border-left: .4rem solid @callout-primary;
+    border-radius: .2rem;
+    font-size: 0.9rem;
+    overflow: auto;
+
+    .callout-title {
+        margin: 0 -1.2rem;
+        padding: .5rem 1.2rem .5rem 2.7rem;
+        border-bottom: .1rem solid fade(@callout-primary, 10%);
+        background-color: fade(@callout-primary, 10%);
+        font-weight: 700;
+
+        &:before {
+            position: absolute;
+            left: 0.9rem;
+            top: 0.8rem;
+            font-size: 1.1rem;
+            font-family: FontAwesome;
+            font-weight: 400;
+            line-height: 1;
+            text-transform: none;
+            white-space: nowrap;
+            speak: none;
+            word-wrap: normal;
+            direction: ltr;
+            content: "\F040";
+            color: @callout-primary;
+        }
+    }
+
+    p:first-child {
+        margin-top: 12px;
+    }
+    
+    li {
+        line-height: @font-size * 1.5;
+    }
+}
+
+.callout-note {
+    border-left: .4rem solid @callout-primary;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-primary, 10%);
+        background-color: fade(@callout-primary, 10%);
+
+        &:before {
+            color: @callout-primary;
+            content: "\F040";
+        }
+    }
+}
+
+.callout-summary {
+    border-left: .4rem solid @callout-primary;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-primary, 10%);
+        background-color: fade(@callout-primary, 10%);
+
+        &:before {
+            color: @callout-primary;
+            content: "\F039";
+        }
+    }
+}
+
+.callout-info {
+    border-left: .4rem solid @callout-info;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-info, 10%);
+        background-color: fade(@callout-info, 10%);
+
+        &:before {
+            color: @callout-info;
+            content: "\F05A";
+        }
+    }
+}
+
+.callout-tip {
+    border-left: .4rem solid @callout-info;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-info, 10%);
+        background-color: fade(@callout-info, 10%);
+
+        &:before {
+            color: @callout-info;
+            content: "\F0EB";
+        }
+    }
+}
+
+.callout-success {
+    border-left: .4rem solid @callout-success;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-success, 10%);
+        background-color: fade(@callout-success, 10%);
+
+        &:before {
+            color: @callout-success;
+            content: "\F00C";
+        }
+    }
+}
+
+.callout-question {
+    border-left: .4rem solid @callout-success;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-success, 10%);
+        background-color: fade(@callout-success, 10%);
+
+        &:before {
+            color: @callout-success;
+            content: "\F059";
+        }
+    }
+}
+
+.callout-quote {
+    border-left: .4rem solid @callout-quote;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-quote, 10%);
+        background-color: fade(@callout-quote, 10%);
+
+        &:before {
+            color: @callout-quote;
+            content: "\F10E";
+        }
+    }
+}
+
+.callout-warning {
+    border-left: .4rem solid @callout-warning;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-warning, 10%);
+        background-color: fade(@callout-warning, 10%);
+
+        &:before {
+            color: @callout-warning;
+            content: "\F071";
+        }
+    }
+}
+
+.callout-fail {
+    border-left: .4rem solid @callout-danger;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-danger, 10%);
+        background-color: fade(@callout-danger, 10%);
+
+        &:before {
+            color: @callout-danger;
+            content: "\F00D";
+        }
+    }
+}
+
+.callout-error {
+    border-left: .4rem solid @callout-danger;
+
+    .callout-title {
+        border-bottom: .1rem solid fade(@callout-danger, 10%);
+        background-color: fade(@callout-danger, 10%);
+
+        &:before {
+            color: @callout-danger;
+            content: "\F0E7";
+        }
+    }
+}
